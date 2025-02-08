@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Projects</title>
+    <link rel="stylesheet" href="09-dom-projects.css">
+</head>
+
+<body>
+    <p>YouTube Subscribe Button</p>
+    <button onclick="subButtonLogic()" class="js-subscribe-button subscribe-button">Subscribe</button>
+
+    <p>YT premium cost per subscriber, $5 per premium + $2 per subscribed</p>
+    <input placeholder="# of premium desired" class="js-premiumcount cost-input" onkeydown="checkKey(event)">
+    <input placeholder="number of people subscribed to" class="js-subscribedto cost-input" onkeydown="checkKey(event)">
+    <p class="js-total"></p>
+    <button onclick="calculateTotal()" class="js-cost cal-button">Submit</button>
+
+    <p>
+        <button onclick="runTest()">runTest</button>
+    </p>
+
+    <p>Todo List</p>
+    <input class="js-todoItem" onkeydown="checkToDoKey(event)">
+    <!-- <button onclick="addItem()">Add todo item</button> -->
+     <button class="js-todoButton">Add todo item</button>
+    <p>Successfully added</p>
+    <p class="js-todoLiveListSingleAdd"></p>
+    <p>Current To Do list</p>
+    <p class="js-todoLiveList"></p>
+    <p>cumulative loop</p>
+    <p class="js-cumulativeloop"></p>
+
+    <input type="date">
+</body>
+<script src="09-dom-projects.js"></script>
+
+</html>
